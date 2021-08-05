@@ -6,7 +6,6 @@ import 'package:recipe2/Widget/category.dart';
 import 'package:recipe2/Widget/drawer.dart';
 import 'package:recipe2/Widget/popularRecipiesCard.dart';
 import 'package:recipe2/Widget/recipiesCard.dart';
-import 'package:recipe2/Widget/searchBar.dart';
 import 'package:recipe2/Widget/shared.dart';
 
 class Explore extends StatefulWidget {
@@ -19,7 +18,6 @@ class Explore extends StatefulWidget {
 final FirebaseAuth _auth = FirebaseAuth.instance;
 
 class _ExploreState extends State<Explore> {
-  
   String currentEmail;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   Map count;
@@ -38,7 +36,7 @@ class _ExploreState extends State<Explore> {
 //     super.initState();
 //     widget.optionSelected = false ?? true ;
 //   }
-  
+
   @override
   final db = FirebaseFirestore.instance;
   @override
@@ -139,10 +137,9 @@ class _ExploreState extends State<Explore> {
               ),
             ),
             Container(
-              child:  Column(
+              child: Column(
                 children: [
                   PopularRecipies(),
-                  
                 ],
               ),
             ),

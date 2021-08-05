@@ -38,11 +38,10 @@ class _RecipiesCardState extends State<RecipiesCard> {
           if (snapshot.hasData) {
             var itemCount;
             var recipies = snapshot.data.docs;
-              if(recipies.length>11){
-               itemCount=10;
-            }
-            else{
-               itemCount=recipies.length;
+            if (recipies.length > 11) {
+              itemCount = 10;
+            } else {
+              itemCount = recipies.length;
             }
             return ListView.builder(
                 physics: BouncingScrollPhysics(),
@@ -66,7 +65,7 @@ class _RecipiesCardState extends State<RecipiesCard> {
                   }
 
                   return GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       _showRewardedAd();
                       Navigator.push(
                         context,
@@ -138,7 +137,6 @@ class _RecipiesCardState extends State<RecipiesCard> {
                                     // Text('${number}'),
                                     SizedBox(width: 3),
                                     Icon(Icons.remove_red_eye_rounded),
-                                   
                                   ],
                                 ),
                                 Expanded(
@@ -153,8 +151,6 @@ class _RecipiesCardState extends State<RecipiesCard> {
                                             removeFavorite(
                                                 recipies[index].get('id'),
                                                 _auth.currentUser.uid);
-                                           
-                                            
                                           }
                                           if (recipies[index].get(
                                                   'fav.${(_auth.currentUser.uid)}') ==
@@ -227,17 +223,18 @@ class _RecipiesCardState extends State<RecipiesCard> {
       return false;
     }
   }
-  RewardedAd _rewardedAd; 
-int maxFailedLoadAttempts = 3;
+
+  RewardedAd _rewardedAd;
+  int maxFailedLoadAttempts = 3;
   int _numRewardedLoadAttempts = 0;
-   static final AdRequest request = AdRequest(
+  static final AdRequest request = AdRequest(
     keywords: <String>['foo', 'bar'],
     contentUrl: 'http://foo.com/bar.html',
     nonPersonalizedAds: true,
   );
-   void _createRewardedAd() {
+  void _createRewardedAd() {
     RewardedAd.load(
-        adUnitId:"ca-app-pub-5534506225496412/8633368297",
+        adUnitId: "ca-app-pub-5534506225496412/8633368297",
         request: request,
         rewardedAdLoadCallback: RewardedAdLoadCallback(
           onAdLoaded: (RewardedAd ad) {

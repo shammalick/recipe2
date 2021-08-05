@@ -5,8 +5,6 @@ import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-
-import 'package:path_provider/path_provider.dart';
 import 'package:recipe2/Utils/root.dart';
 import 'package:recipe2/controllers/userController.dart';
 import 'Screen/explore.dart';
@@ -20,8 +18,7 @@ void main() async {
   await Firebase.initializeApp();
   MobileAds.instance.initialize();
   // Admob.initialize();
-  
-  
+
   runApp(MyApp());
 }
 

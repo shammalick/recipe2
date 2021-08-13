@@ -75,6 +75,7 @@ bool optionSelected = false;
 
     this.widget.views++;
     optionSelected = false ?? true;
+     createViews(this.widget.id);
     //  Admob.requestTrackingAuthorization();
    
     print("init");

@@ -37,7 +37,7 @@ privacy(context) {
                       'Now all are in your handy. The app contains so many popular categories of news. Such as news, business, magazines, sports, jobs, technology and entertainment. You can read, bookmark, and share the news with others.\n'),
                   SizedBox(height: 5),
                   Text(
-                      "Now all are in your handy. The app contains so many popular categories of news. Such as news, business, magazines, sports, jobs, technology and entertainment. You can read, bookmark, and share the news with others.\n"),
+                      "Now all are in your handy. The app contains so many popular categories of news. Such as news, business, magazines, sports, jobs, technology and entertainment. You can read, bookmark, and share the news with others. This app is also develop the second version by Ahtasham Haider (ahtasham6266401@gmail.com)\n"),
                   SizedBox(height: 5),
                   Text(
                       "Now all are in your handy. The app contains so many popular categories of news. Such as news, business, magazines, sports, jobs, technology and entertainment. You can read, bookmark, and share the news with others.\n"),

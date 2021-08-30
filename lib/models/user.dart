@@ -13,10 +13,5 @@ class UserModel {
     email = doc['email'];
     imagUrl = doc['imagUrl'];
   }
-  // UserModel.fromDocumentSnapshot({DocumentSnapshot documentSnapshot}) {
-  //   id = documentSnapshot.id;
-  //   name = documentSnapshot.get('name');
-  //   email = documentSnapshot.get('email');
-  //   imagUrl = documentSnapshot.get('imagUrl');
-  // }
+
 }

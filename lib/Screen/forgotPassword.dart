@@ -37,7 +37,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 
                 new Container(
                   width: double.infinity,
-//      height: ScreenUtil.getInstance().setHeight(500),
+
                   padding: EdgeInsets.only(bottom: 20),
                   decoration: BoxDecoration(
                       color: Colors.white,

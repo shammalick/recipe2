@@ -110,14 +110,7 @@ bool optionSelected = false;
                     child: AdWidget(ad: _anchoredBanner),
                   ),
         ],),
-        // Container(
-        //   height: 70,
-        //   child: AdWidget(ad: myBanner)
-        // ,),
-      // AdmobBanner(
-      //   adUnitId:getBannerAdUnitId(),
-      //   adSize: AdmobBannerSize.BANNER,
-      // ),
+      
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         brightness: Brightness.light,
@@ -350,15 +343,3 @@ bool optionSelected = false;
 
  
 }
-//  deleteData(String data) {
-//     if (chapterTitle != null) {
-//       DocumentReference documentReference = FirebaseFirestore.instance
-//           .collection("Books")
-//           .doc(selectedBook)
-//           .collection('Chapters')
-//           .doc(chapterTitle);
-//       documentReference
-//           .delete()
-//           .whenComplete(() => {print("$chapterTitle document Deleted")});
-//     }
-//   }

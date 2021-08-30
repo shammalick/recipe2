@@ -15,7 +15,7 @@ class Database {
         'email': user.email,
         'imageUrl': null,
         'id':user.id,
-        // 'imageUrl':null,
+      
       });
       return true;
     } catch(e) {

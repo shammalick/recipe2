@@ -10,8 +10,7 @@ import 'package:recipe2/Widget/searchBar.dart';
 import 'package:recipe2/Widget/shared.dart';
 
 class Explore extends StatefulWidget {
-  // bool optionSelected = false;
-  // Explore({this.optionSelected});
+  
   @override
   _ExploreState createState() => _ExploreState();
 }
@@ -32,12 +31,6 @@ class _ExploreState extends State<Explore> {
     return email.toString();
   }
 
-// @override
-//   void initState() {
-//     // TODO: implement initState
-//     super.initState();
-//     widget.optionSelected = false ?? true ;
-//   }
   
   @override
   final db = FirebaseFirestore.instance;
@@ -50,12 +43,7 @@ class _ExploreState extends State<Explore> {
         brightness: Brightness.light,
         elevation: 0,
         iconTheme: IconThemeData(color: blackk),
-        // actions: [
-        //   Padding(
-        //     padding: EdgeInsets.only(right: 16),
-        //     child: AnimatedSearchBar(),
-        //   ),
-        // ],
+     
       ),
       drawer: SideList(),
       body: SingleChildScrollView(

@@ -163,10 +163,7 @@ class SignUpFormCard extends GetWidget<AuthController> {
                         }
                       }
 
-                      // } else {
-                      //   Navigator.push(context,
-                      //       MaterialPageRoute(builder: (context) => Login()));
-                      // }
+                
                     },
                     child: Center(
                       child: Text("SIGN UP",

@@ -21,7 +21,7 @@ class _PopularRecipiesState extends State<PopularRecipies> {
     return email.toString();
     
   }
-  //  int itemCount;
+ 
   bool check=false;
   @override
   Widget build(BuildContext context) {
@@ -166,9 +166,7 @@ class _PopularRecipiesState extends State<PopularRecipies> {
                                                     ));
                                                   }
 
-                                                  // showSnackBar('${(recipies[index].get('title'))} is saved',
-                                                  // snackPosition: SnackPosition.BOTTOM,);
-                                                });
+                                                    });
                                               },
                                               child: Icon(Icons.favorite,color: check?Colors.red:Colors.black)),
                                         ),

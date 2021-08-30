@@ -16,7 +16,7 @@ class LoginFormCard extends GetWidget<AuthController> {
         children: [
           new Container(
             width: double.infinity,
-//      height: ScreenUtil.getInstance().setHeight(500),
+
             padding: EdgeInsets.only(bottom: 20),
             decoration: BoxDecoration(
                 color: Colors.white,
@@ -54,16 +54,7 @@ class LoginFormCard extends GetWidget<AuthController> {
                         hintText: "Email@...com",
                         hintStyle:
                             TextStyle(color: Colors.grey, fontSize: 12.0)),
-                    //  validator: (String value){
-                    //                 if(value.isEmpty)
-                    //                 {
-                    //                   return 'Please Enter Name';
-                    //                 }
-                    //                 return null;
-                    //               },
-                    //               onSaved: (String value){
-                    //                 name = value;
-                    //               },
+                 
                   ),
                   SizedBox(
                     height: 20,
@@ -78,13 +69,7 @@ class LoginFormCard extends GetWidget<AuthController> {
                         hintText: "Password",
                         hintStyle:
                             TextStyle(color: Colors.grey, fontSize: 12.0)),
-                    //  validator: (String value){
-                    //               if(value.isEmpty)
-                    //               {
-                    //                 return 'Please a Enter Password';
-                    //               }
-                    //               return null;
-                    //             },
+          
                   ),
                   SizedBox(
                     height: 35,

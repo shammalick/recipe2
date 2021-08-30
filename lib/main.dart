@@ -14,12 +14,12 @@ import 'Screen/signUp.dart';
 import 'controllers/bindings/bindings.dart';
 
 void main() async {
-  // Get.put<AuthController>(AuthController());
+ 
   Get.put(UserController());
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   MobileAds.instance.initialize();
-  // Admob.initialize();
+  
   
   
   runApp(MyApp());

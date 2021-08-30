@@ -67,9 +67,7 @@ class _LoginState extends State<Login> {
                   ),
                   LoginFormCard(),
                   SizedBox(height: 20),
-                  // Column(
-                  //   children: [],
-                  // ),
+                
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -115,7 +113,7 @@ class _LoginState extends State<Login> {
                   InkWell(
                     onTap: (){
                      skipUser();
-                        // await controller.skipUser();
+                     
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => Explore()));
                     },
@@ -142,14 +140,13 @@ class _LoginState extends State<Login> {
     try {
       await _firestore.collection('users').doc(_auth.currentUser.uid).set(
         {
-// "email":_auth.currentUser.uid+"@gmail.com",
+
 "imageUrl":null,
 "id":_auth.currentUser.uid
-// "name":_auth.currentUser.uid
+
         }
       );
-      // .delete();
-      // .set({"status":false});
+    
       return true;
     } catch (e) {
       print(e);
